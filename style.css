@@ -15,8 +15,7 @@ body{
 .logo img{
     float: left;
     padding: 0;
-    /* margin: 20px 30px; */
-    margin: 20px 0px;
+    margin: 20px 30px;
     width: 30px;
     /* width: 150%; */
 }
