@@ -1,5 +1,6 @@
 # Thought-Criminals
 group coursework II
+due on Monday, 18 November 2019
 
 Team Members __________________________________________
 Angela Newsam     - membership & members' forum
