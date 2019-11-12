@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+}
+
+.in-front {
+    z-index: 10;
+}
+
+.navbar-dark .navbar-nav .nav-link, .nav-link:hover {
+    color: #C3A894;
+}
+
+.hero-image {
+    height: 60vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/war-is-peace.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.layer {
+    background-color: rgba(25, 94, 86, 0.387);
+    position: absolute;
+    top: 21%;
+    width: auto;
+    height: auto;  
+    transition: all .5s;
+}
+
+.content {
+    width: 100%;
+}
+
+/*
+Color Palette:
+#0F2129
+#012E40
+#025159
+#027373
+#C3A894
+#5A535A
+*/
+
+.bg-colour-1, .bg-colour-1-hover:hover {
+    background-color: #0F2129;
+    color: white;
+}
+
+.bg-colour-2, .bg-colour-2-hover:hover {
+    background-color: #012E40;
+    color: white;
+}
+
+.bg-colour-3, .bg-colour-3-hover:hover {
+    background-color: #025159;
+    color: white;
+}
+
+.bg-colour-4, .bg-colour-4-hover:hover {
+    background-color: #027373;
+    color: black;
+}
+
+.bg-colour-5, .bg-colour-5-hover:hover {
+    background-color: #C3A894;
+    color: black;
+}
+
+.bg-colour-6, .bg-colour-6-hover:hover {
+    background-color: #5A535A;
+    color: black;
+}
+
+.txt-colour-1 {
+    color: #0F2129;
+}
+
+.txt-colour-2 {
+    color: #0F2129;
+}
+
+.txt-colour-3 {
+    color: #0F2129;
+}
+
+.txt-colour-4 {
+    color: #0F2129;
+}
+
+.txt-colour-5 {
+    color: #0F2129;
+}
+
+.txt-colour-6 {
+    color: #5A535A;
+}

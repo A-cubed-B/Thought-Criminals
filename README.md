@@ -1,15 +1,10 @@
-# Thought-Criminals
-group coursework II
-due on Monday, 18 November 2019
+# implementation-poem
+this repostitory for code, images, etc.
+please sure your code has a header containing your name, ID no. and date
 
-_______________________________________________________
-Angela Newsam     - membership & members' forum
-_______________________________________________________
-Antonia Zhekova   - newsletter & "upload your stories"
-_______________________________________________________
-Arthur Sidle      - events & gallery
-_______________________________________________________
-Bianca Marincas   - home page and "about us" page
-_______________________________________________________
-Sushrut Subedi    - content & conspiracies
-_______________________________________________________
+Team Members
+Angela Newsam
+Antonia Zhekova
+Arthur Sidle
+Bianca Marincas
+Sushrut Subedi
