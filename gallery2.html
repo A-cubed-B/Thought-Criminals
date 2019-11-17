@@ -1,0 +1,197 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Gallery - Page 2</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <meta name="theme-color" content="#fafafa">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <link type="text/css" rel="stylesheet" href="css/stylesheet.css">
+    <link type="text/css" rel="stylesheet" href="css/gallery.css">
+</head>
+
+<body>
+    <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+    
+    <!-- Carousel (Starts off hidden) -->
+    <div id="demo" class="carousel slide d-none position-fixed w-100 h-100" data-ride="carousel" data-interval="false">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+            
+        </ul>
+
+        <!-- The slideshow -->
+        <div class="carousel-inner h-100"></div>
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+        
+        <!-- Close button -->
+        <div class="close-button" onclick="hideCarousel()">
+            <img src="img/close-button.svg">
+        </div>
+
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg bg-colour-1 navbar-dark position-fixed p-lg-0 w-100 in-front">
+
+        <!-- Brand -->
+        <a class="navbar-brand px-lg-4 m-lg-0" href="#">
+            <img src="img/booffer3.svg" alt="logo" style="width:30px">
+        </a>
+
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsible">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Links -->
+        <div class="collapse navbar-collapse txt-colour-5" id="collapsible">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <!-- Use this set of attributes if user is on page -->
+                    <a class="nav-link bg-colour-6 py-lg-3 px-lg-5" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link bg-colour-4-hover py-lg-3 px-lg-5" href="#">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link bg-colour-4-hover py-lg-3 px-lg-5" href="#">Conspiracies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link bg-colour-4-hover py-lg-3 px-lg-5" href="#">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link bg-colour-4-hover py-lg-3 px-lg-5" href="#">About Us</a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <div style="height: 56px"></div>
+
+    <!-- Central Container -->
+    <div class="bg-colour-2">
+        <div class="container px-lg-5">
+            <div class="row">
+                <div class="col-lg-9 bg-colour-1">
+                    <!-- This column should house the main content of the page that distinguishes it from all the other pages -->
+                    <div class="container-fluid p-lg-4">
+                        <div class="row display-1 mb-lg-4">Gallery</div>
+                        <div class="row">
+                            <div class="col-lg-3 p-lg-1 g-image"></div>
+                            <div class="col-lg-3 p-lg-1 g-image"></div>
+                            <div class="col-lg-3 p-lg-1 g-image"></div>
+                            <div class="col-lg-3 p-lg-1 g-image"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-3 p-lg-1 g-image"></div>
+                            <div class="col-lg-3 p-lg-1 g-image"></div>
+                            <div class="col-lg-3 p-lg-1 g-image"></div>
+                            <div class="col-lg-3 p-lg-1 g-image"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-3 p-lg-1 g-image"></div>
+                            <div class="col-lg-3 p-lg-1 g-image"></div>
+                            <div class="col-lg-3 p-lg-1 g-image"></div>
+                            <div class="col-lg-3 p-lg-1 g-image"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-3 p-lg-1 g-image"></div>
+                            <div class="col-lg-3 p-lg-1 g-image"></div>
+                            <div class="col-lg-3 p-lg-1 g-image"></div>
+                            <div class="col-lg-3 p-lg-1 g-image"></div>
+                        </div>
+                    </div>
+                    <ul class="pagination">
+                        <li class="page-item"><a class="page-link" href="gallery.html">Previous</a></li>
+                        <li class="page-item"><a class="page-link" href="gallery.html">1</a></li>
+                        <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item disabled"><a class="page-link" href="#">Next</a></li>
+                    </ul> 
+                </div>
+                <div class="col-lg-3 bg-colour-3">
+                    <h1>Recent</h1>
+                    <a href="#">Link 1</a><br>
+                    <a href="#">Link 2</a><br>
+                    <a href="#">Link 3</a><br>
+                    <a href="#">Link 4</a><br>
+                    <a href="#">Link 5</a><br>
+                    <a href="#">Link 6</a><br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!-- Footer -->
+    <footer class="page-footer bg-colour-4">
+        <div class="container social-media py-2">
+            <div class="row">
+                <div class="col">
+                    <a href="#"><img class="icon" src="img/sm/facebook.svg"></a>
+                </div>
+                <div class="col">
+                    <a href="#"><img class="icon" src="img/sm/youtube.svg"></a>
+                </div>
+                <div class="col">
+                    <a href="#"><img class="icon" src="img/sm/instagram.svg"></a>
+                </div>
+                <div class="col">
+                    <a href="#"><img class="icon" src="img/sm/twitter.svg"></a>
+                </div>
+                <div class="col">
+                    <a href="#"><img class="icon" src="img/sm/whatsapp.svg"></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="p-lg-3">
+            Copyright 2050 as we're from the future ;)<br>
+            No rights reserved
+        </div>
+    </footer>
+
+    <script src="js/plugins.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+    
+    <script src="js/gallery.js"></script>
+    <script>
+        generatePage(2);
+    </script>
+</body>
+
+</html>
