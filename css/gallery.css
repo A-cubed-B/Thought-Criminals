@@ -1,3 +1,5 @@
+/* Arthur Sidle (1911859) */
+
 .g-image {
     border: 3px solid #0F2129;
 }
@@ -16,10 +18,6 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-}
-
-.img-wrapper:hover {
-    /* border: 3px solid #027373; */
 }
 
 .image-text {
@@ -52,7 +50,7 @@
 }
 
 .close-button:hover {
-    background-color: rgb(100,100,100,0.5)
+    background-color: rgb(100,100,100,0.5);
 }
 
 .close-button img {

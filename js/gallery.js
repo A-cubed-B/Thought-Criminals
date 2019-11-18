@@ -1,5 +1,10 @@
+// Arthur Sidle (1911859)
+
 const IMAGEDATA = [
     /*
+    This is a hard-coded database consisting of an array of arrays for the gallery images
+    
+    The data attributed to each entry in the arrays are:
     0: Image URL
     1: Image title
     2: Alt text
@@ -49,43 +54,13 @@ const IMAGEDATA = [
     
     ["imagesqtbnANd9GcTqpni4Q6HRrWcLGcxRqdYPdaM9vMHL3GdFU7p6fWIkuiU0pes.jpg","Wholesome graffiti","Graffiti saying \"9/11 was a inside job!\""]
 ];
-        
-function imageCard(imageSrc) {
-    return `<div class="rounded">
-                <div class="img-wrapper" style="background-image:url('img/gallery/` + IMAGEDATA[imageSrc][0] + `')">
-                </div>
-                <div class="image-text bg-colour-1">
-                    <h6>` + IMAGEDATA[imageSrc][1] + `</h6>
-                </div>
-            </div>`;
-}
 
-function carouselIndicator(imageNo) {
-    return `<li data-target="#demo" data-slide-to="` + imageNo + `"></li>`;
-}
 
-function carouselImage(imageSrc) {
-    return `<div class="carousel-item` + ((imageSrc % 16 === 0) ? " active" : "") + ` h-100">
-                    <img src="img/gallery/` + IMAGEDATA[imageSrc][0] + `" alt="` + IMAGEDATA[imageSrc][2] + `">
-                </div>`
-}
 
-function showCarousel(page) {
-    $(".carousel").removeClass("d-none");
-    $(".carousel-item").removeClass("active");
-    $(".carousel-item").eq(page).addClass("active");
-}
 
-function hideCarousel() {
-    $(".carousel").addClass("d-none");
-}
 
-function windowFit(img, winWidth, winHeight) {
-    natWidth = img.naturalWidth;
-    natHeight = img.naturalHeight;
-
-}
-
+// This function generates the gallery automatically.
+// The page argument determines what set of images will be generated
 function generatePage(page) {
     for (let i = 0; i < 16; i++) {
         var pageNo = (page - 1) * 16 + i;
@@ -99,3 +74,43 @@ function generatePage(page) {
     }
 }
 
+
+// This uses template literals to return a gallery image container with the relevant details from the database
+function imageCard(imageSrc) {
+    var thumbnail = IMAGEDATA[imageSrc][0];
+    var title = IMAGEDATA[imageSrc][1];
+    return `<div class="rounded">
+                <div class="img-wrapper" style="background-image:url('img/gallery/${thumbnail}')">
+                </div>
+                <div class="image-text bg-colour-1">
+                    <h6>${title}</h6>
+                </div>
+            </div>`;
+}
+
+// This automatically generates indicators for the carousel
+function carouselIndicator(imageNo) {
+    return `<li data-target="#demo" data-slide-to="${imageNo}"></li>`;
+}
+
+// This automatically generates the images on the over-screen carosel that shows when you click on an image
+function carouselImage(imageSrc) {
+    var isActive = (imageSrc % 16 === 0) ? "active" : "";
+    var image = IMAGEDATA[imageSrc][0];
+    var altText = IMAGEDATA[imageSrc][2];
+    return `<div class="carousel-item ${isActive} h-100">
+                <img src="img/gallery/${image}" alt="${altText}">
+            </div>`
+}
+
+// This shows the over-screen carousel when you click on an image
+function showCarousel(page) {
+    $(".carousel").removeClass("d-none");
+    $(".carousel-item").removeClass("active");
+    $(".carousel-item").eq(page).addClass("active");
+}
+
+// Hides the over-screen carousel
+function hideCarousel() {
+    $(".carousel").addClass("d-none");
+}
